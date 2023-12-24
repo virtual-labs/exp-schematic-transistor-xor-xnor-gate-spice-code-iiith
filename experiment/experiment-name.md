@@ -1,1 +1,1 @@
-## Design of NAND, NOR Gates using SPICE Code
+## Design of XOR, XNOR Gates using SPICE Code

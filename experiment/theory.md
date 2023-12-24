@@ -158,6 +158,7 @@ Transmission gate is the parallel combination of NMOS and PMOS. When control sig
 **TRUTH TABLE**
 
 **NMOS PASS TRANSISTOR**:
+
 |IN |	CONTROL |	OUT|
 |---|---------|----|
 |0  |	0       |	X  |
@@ -166,6 +167,7 @@ Transmission gate is the parallel combination of NMOS and PMOS. When control sig
 |1 	| 1       |	1  |
 
 **PMOS PASS TRANSISTOR**:
+
 |IN |	CONTROL |	OUT|
 |---|---------|----|
 |0  |	0       |	0  |
