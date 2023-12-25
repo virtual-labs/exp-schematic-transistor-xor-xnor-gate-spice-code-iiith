@@ -1,0 +1,243 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How can you specify the rise time of a pulse source in NGSPICE?",
+      "answers": {
+        "a": "`.PULSE 0 5 0 1u 1u 1u 10u`",
+        "b": "`.PULSE(0 5 0 1u 1u 1u 10u)`",
+        "c": "`.PULSE (V1=0 V2=5 TD=1u TR=1u TF=1u PW=10u)`",
+        "d": "`.PULSE V1=0 V2=5 TD=1u TR=1u TF=1u PW=10u`"
+      },
+      "explanations": {
+        "a": "Correct! This syntax specifies the rise time in NGSPICE for a pulse source.",
+        "b": "Incorrect. Incorrect syntax for specifying rise time in a pulse source.",
+        "c": "Incorrect. Incorrect syntax for specifying rise time in a pulse source.",
+        "d": "Incorrect. Incorrect syntax for specifying rise time in a pulse source."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which NGSPICE command is used to perform AC analysis?",
+      "answers": {
+        "a": "`.ac`",
+        "b": "`.tran`",
+        "c": "`.dc`",
+        "d": "`.ac sweep`"
+      },
+      "explanations": {
+        "a": "Correct! The `.ac` command is used for AC analysis in NGSPICE.",
+        "b": "Incorrect. The `.tran` command is used for transient analysis.",
+        "c": "Incorrect. The `.dc` command is used for DC analysis.",
+        "d": "Incorrect. Incorrect syntax for AC analysis."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.dc` command in NGSPICE?",
+      "answers": {
+        "a": "To perform DC analysis",
+        "b": "To define a subcircuit",
+        "c": "To set simulation temperature",
+        "d": "To specify the rise time of a pulse source"
+      },
+      "explanations": {
+        "a": "Correct! The `.dc` command is used for DC analysis in NGSPICE.",
+        "b": "Incorrect. The `.dc` command is not used for defining subcircuits.",
+        "c": "Incorrect. Simulation temperature is set using other commands.",
+        "d": "Incorrect. Pulse source characteristics are set using other commands."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.option post` command in NGSPICE?",
+      "answers": {
+        "a": "To enable post-processing",
+        "b": "To set simulation options",
+        "c": "To include a library file",
+        "d": "To specify the simulation temperature"
+      },
+      "explanations": {
+        "a": "Correct! The `.option post` command is used to enable post-processing in NGSPICE.",
+        "b": "Incorrect. The `.options` command is used for setting simulation options.",
+        "c": "Incorrect. The `.lib` command is used to include a library file.",
+        "d": "Incorrect. The `.temp` command is used to specify the simulation temperature."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How can you specify the amplitude of an AC source in NGSPICE?",
+      "answers": {
+        "a": "`.AC AMPLITUDE=1V`",
+        "b": "`.AC(AMPLITUDE=1V)`",
+        "c": "`.AC 1V`",
+        "d": "`.AC VAMPL=1V`"
+      },
+      "explanations": {
+        "a": "Correct! This syntax specifies the amplitude of an AC source in NGSPICE.",
+        "b": "Incorrect. Incorrect syntax for specifying AC amplitude.",
+        "c": "Incorrect. Incorrect syntax for specifying AC amplitude.",
+        "d": "Incorrect. Incorrect syntax for specifying AC amplitude."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the `.measure` command in NGSPICE?",
+      "answers": {
+        "a": "To perform measurements during simulation",
+        "b": "To define a subcircuit",
+        "c": "To set simulation options",
+        "d": "To enable post-processing"
+      },
+      "explanations": {
+        "a": "Correct! The `.measure` command is used to perform measurements during simulation in NGSPICE.",
+        "b": "Incorrect. The `.measure` command is not used for defining subcircuits.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Incorrect. The `.option post` command is used to enable post-processing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How can you specify the simulation time step in NGSPICE for transient analysis?",
+      "answers": {
+        "a": "`.tran 1u`",
+        "b": "`.tran 1u/10`",
+        "c": "`.tran 10u/100`",
+        "d": "`.tran 100n`"
+      },
+      "explanations": {
+        "a": "Incorrect. This specifies the total simulation time, not the time step.",
+        "b": "Correct! This syntax specifies the simulation time step.",
+        "c": "Incorrect. This specifies the total simulation time, not the time step.",
+        "d": "Incorrect. This specifies the total simulation time, not the time step."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.nodeset` command in NGSPICE?",
+      "answers": {
+        "a": "To set initial conditions for nodes",
+        "b": "To define a subcircuit",
+        "c": "To specify the simulation temperature",
+        "d": "To enable post-processing"
+      },
+      "explanations": {
+        "a": "Correct! The `.nodeset` command is used to set initial conditions for nodes in NGSPICE.",
+        "b": "Incorrect. The `.nodeset` command is not used for defining subcircuits.",
+        "c": "Incorrect. The `.temp` command is used to specify the simulation temperature.",
+        "d": "Incorrect. The `.option post` command is used to enable post-processing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the .lib command in NGSPICE?",
+      "answers": {
+        "a": "To include a library file",
+        "b": "To define a subcircuit",
+        "c": "To specify the simulation temperature",
+        "d": "To set simulation options"
+      },
+      "explanations": {
+        "a": "Correct! The .lib command is used to include a library file in NGSPICE.",
+        "b": "Incorrect. The .lib command is not used for defining subcircuits.",
+        "c": "Incorrect. The .temp command is used for specifying the simulation temperature.",
+        "d": "Incorrect. The .options command is used for setting simulation options."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.param` command in NGSPICE?",
+      "answers": {
+        "a": "To define a subcircuit",
+        "b": "To specify the simulation temperature",
+        "c": "To set simulation options",
+        "d": "To assign parameter values"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.param` command is not used for defining subcircuits.",
+        "b": "Incorrect. The `.temp` command is used for specifying the simulation temperature.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Correct! The `.param` command is used to assign parameter values in NGSPICE."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In NGSPICE, what is the purpose of the `.op` analysis?",
+      "answers": {
+        "a": "DC operating point analysis",
+        "b": "Transient analysis",
+        "c": "AC analysis",
+        "d": "Noise analysis"
+      },
+      "explanations": {
+        "a": "Correct! The `.op` analysis in NGSPICE is used for DC operating point analysis.",
+        "b": "Incorrect. Transient analysis is performed using a different command.",
+        "c": "Incorrect. AC analysis is performed using a different command.",
+        "d": "Incorrect. Noise analysis is performed using a different command."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How can you set the value of a parameter in NGSPICE for a pass transistor model?",
+      "answers": {
+        "a": "`.param WIDTH=1u`",
+        "b": "`.param LENGTH=0.5u`",
+        "c": "`.param VTH=0.7`",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Correct! This sets the value of the WIDTH parameter for the pass transistor.",
+        "b": "Correct! This sets the value of the LENGTH parameter for the pass transistor.",
+        "c": "Correct! This sets the value of the VTH parameter for the pass transistor.",
+        "d": "Correct! All of the above are valid ways to set parameter values in NGSPICE."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.control` block in NGSPICE?",
+      "answers": {
+        "a": "To define a subcircuit",
+        "b": "To specify the simulation temperature",
+        "c": "To set simulation options",
+        "d": "To group multiple commands"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.control` block is not used for defining subcircuits.",
+        "b": "Incorrect. The `.temp` command is used for specifying the simulation temperature.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Correct! The `.control` block in NGSPICE is used to group multiple commands."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.endc` command in an NGSPICE `.control` block?",
+      "answers": {
+        "a": "To end the simulation",
+        "b": "To end the `.control` block",
+        "c": "To define a subcircuit",
+        "d": "To set simulation options"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.end` command is used to end the simulation.",
+        "b": "Correct! The `.endc` command is used to end the `.control` block in NGSPICE.",
+        "c": "Incorrect. Subcircuits are not defined within the `.control` block.",
+        "d": "Incorrect. The `.options` command is used for setting simulation options."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}

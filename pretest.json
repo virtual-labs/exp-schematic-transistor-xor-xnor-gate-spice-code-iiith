@@ -1,0 +1,175 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which of the following is the symbol for an XOR gate?",
+      "answers": {
+        "a": "∨",
+        "b": "⊕",
+        "c": "∧",
+        "d": "¬"
+      },
+      "explanations": {
+        "a": "Incorrect symbol. Check the symbols for logic gates.",
+        "b": "Correct! The symbol '⊕' represents an XOR gate.",
+        "c": "Incorrect symbol. Check the symbols for logic gates.",
+        "d": "Incorrect symbol. Check the symbols for logic gates."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the output of an XOR gate when both inputs are HIGH (1)?",
+      "answers": {
+        "a": "LOW (0)",
+        "b": "HIGH (1)",
+        "c": "Cannot be determined",
+        "d": "Same as one of the inputs"
+      },
+      "explanations": {
+        "a": "Correct! When both inputs are the same, the output is LOW.",
+        "b": "Incorrect. Check the truth table for an XOR gate.",
+        "c": "Incorrect. The output of an XOR gate can be determined.",
+        "d": "Incorrect. Check the truth table for an XOR gate."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following represents the logical operation of an XNOR gate?",
+      "answers": {
+        "a": "A' + B'",
+        "b": "AB + A'B",
+        "c": "AB + A'B'",
+        "d": "(A + B)'"
+      },
+      "explanations": {
+        "a": "Incorrect. Represents the NOT operation of inputs A and B.",
+        "b": "Incorrect. Represents the XOR operation, not XNOR.",
+        "c": "Correct! Represents the logical operation of an XNOR gate.",
+        "d": "Incorrect. Represents the NAND operation of inputs A and B."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the output of an XNOR gate when both inputs are LOW (0)?",
+      "answers": {
+        "a": "LOW (0)",
+        "b": "HIGH (1)",
+        "c": "Cannot be determined",
+        "d": "Same as one of the inputs"
+      },
+      "explanations": {
+        "b": "Correct! When both inputs are the same, the output is High.",
+        "a": "Incorrect. Check the truth table for an XNOR gate.",
+        "c": "Incorrect. The output of an XNOR gate can be determined.",
+        "d": "Incorrect. Check the truth table for an XNOR gate."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is the symbol for an XNOR gate?",
+      "answers": {
+        "a": "⊕",
+        "b": "∨",
+        "c": "⊙",
+        "d": "≠"
+      },
+      "explanations": {
+        "a": "Incorrect. The symbol '⊕' represents an XOR gate.",
+        "b": "Incorrect. Check the symbols for logic gates.",
+        "c": "Correct! The symbol '⊙' represents an XNOR gate.",
+        "d": "Incorrect. Check the symbols for logic gates."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In pass transistor logic, what type of transistors are used for implementing XOR and XNOR gates?",
+      "answers": {
+        "a": "NMOS transistors only",
+        "b": "PMOS transistors only",
+        "c": "Both NMOS and PMOS transistors",
+        "d": "JFET transistors"
+      },
+      "explanations": {
+        "a": "Incorrect. Pass transistor logic uses both NMOS and PMOS transistors.",
+        "b": "Incorrect. Pass transistor logic uses both NMOS and PMOS transistors.",
+        "c": "Correct! Pass transistor logic uses both NMOS and PMOS transistors.",
+        "d": "Incorrect. JFET transistors are not commonly used in pass transistor logic."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the truth table for an XOR gate?",
+      "answers": {
+        "a": "0 0 | 0\n0 1 | 1\n1 0 | 1\n1 1 | 0",
+        "b": "0 0 | 1\n0 1 | 0\n1 0 | 0\n1 1 | 1",
+        "c": "0 0 | 0\n0 1 | 0\n1 0 | 0\n1 1 | 1",
+        "d": "0 0 | 1\n0 1 | 1\n1 0 | 1\n1 1 | 0"
+      },
+      "explanations": {
+        "a": "Incorrect. Check the correct truth table for an XOR gate.",
+        "b": "Correct! Represents the correct truth table for an XOR gate.",
+        "c": "Incorrect. Check the correct truth table for an XOR gate.",
+        "d": "Incorrect. Check the correct truth table for an XOR gate."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which logic gate can be used to implement a half-adder?",
+      "answers": {
+        "a": "AND gate",
+        "b": "OR gate",
+        "c": "XOR gate",
+        "d": "NOT gate"
+      },
+      "explanations": {
+        "a": "Incorrect. An AND gate alone cannot implement a half-adder.",
+        "b": "Incorrect. An OR gate alone cannot implement a half-adder.",
+        "c": "Correct! XOR gate is used to get sum bit in a half-adder.",
+        "d": "Incorrect. A NOT gate alone cannot implement a half-adder."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In a pass transistor XOR gate, how many transistors are required?",
+      "answers": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "explanations": {
+        "a": "Incorrect. More transistors are required for a pass transistor XOR gate.",
+        "b": "Correct! A pass transistor XOR gate requires 3 transistors.",
+        "c": "Incorrect. Check the correct number of transistors for a pass transistor XOR gate.",
+        "d": "Incorrect. Too many transistors for a pass transistor XOR gate."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the main advantage of using pass transistor logic for implementing XOR gates?",
+      "answers": {
+        "a": "Lower power consumption",
+        "b": "Faster speed",
+        "c": "Simpler circuit",
+        "d": "Greater fan-out capability"
+      },
+      "explanations": {
+        "a": "Incorrect. Pass transistor logic may not necessarily have lower power consumption.",
+        "b": "Incorrect. Speed depends on various factors, not just the logic family.",
+        "c": "Correct! Pass transistor logic is known for its simplicity.",
+        "d": "Incorrect. Fan-out capability is not the main advantage of pass transistor logic for XOR gates."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}

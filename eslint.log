@@ -1,0 +1,9 @@
+
+/home/runner/work/exp-schematic-transistor-xor-xnor-gate-spice-code-iiith/exp-schematic-transistor-xor-xnor-gate-spice-code-iiith/experiment/simulation/js/validator.js
+  534:9   warning  'p1' is assigned a value but never used  no-unused-vars
+  534:21  warning  'p2' is assigned a value but never used  no-unused-vars
+  534:33  warning  'n1' is assigned a value but never used  no-unused-vars
+  534:45  warning  'n2' is assigned a value but never used  no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
