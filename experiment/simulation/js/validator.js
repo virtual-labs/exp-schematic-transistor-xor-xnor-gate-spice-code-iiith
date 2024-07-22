@@ -34,7 +34,7 @@ export function isFilled() {
     let gateCallOut = document.getElementById("gate-call-output");
     let gateCallSubckt = document.getElementById("gate-call-subckt-name");
 
-    let error = "Highlighted part of the code is incomplete."
+    let error = "Highlighted part incomplete."
     if (fileName.value.trim() == '') {
         printErrors(error, fileName);
         return false;
@@ -240,15 +240,12 @@ export function isValid() {
         return false;
     }
 
-    // mapping variables
     const variableMap = new Map();
     const variableSubcktMap = new Map();
     let variableList = ["ptm_45nm.txt", "supply", "lmin", "wmin", "wp", convertToLowerCase(VolSrcName.value.trim()), convertToLowerCase(subcktName.value.trim()), convertToLowerCase(gateCallInstance.value.trim()), "V1", "vdd", "gnd"];
     let variableSubcktList = [convertToLowerCase(subcktName.value.trim()), convertToLowerCase(inv_instance1.value.trim()), convertToLowerCase(inv_instance2.value.trim()), convertToLowerCase(pass_transistor1Name.value.trim()), convertToLowerCase(pass_transistor2Name.value.trim()), "vdd", "gnd", "wmin", "lmin"];
     let variables_regular = [VolSrcName, subcktName, gateCallInstance];
     let subcktVars = [subcktName, inv_instance1, inv_instance2, pass_transistor1Name, pass_transistor2Name];
-
-    // Iterate over the variable list
     for (let variable in variableList) {
         // Check if the variable already exists in the Map
         if (variableMap.has(variableList[variable])) {

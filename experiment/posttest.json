@@ -57,7 +57,7 @@
       "answers": {
         "a": "To enable post-processing",
         "b": "To set simulation options",
-        "c": "To include a library file",
+        "c": "To include a lib file",
         "d": "To specify the simulation temperature"
       },
       "explanations": {
