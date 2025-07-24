@@ -1,5 +1,3 @@
-## Theory
-
 ## 1. XOR and XNOR Gate Fundamentals
 
 **XOR** (exclusive OR)
