@@ -9,6 +9,14 @@ The schematic and truth table for 2 inputs A and B for XOR gate:
 
 <img src="images/xorgate.jpeg">
 
+**Circuit Explanation:**
+
+- Uses a total of 8 transistors: 4 NMOS and 4 PMOS.
+- Symmetric design with two main branches for each input (A and B).
+- Pass transistors (NMOS and PMOS) are arranged so the output is high only when the inputs differ.
+- Transmission gates are controlled by complementary inputs, selectively passing either input or its complement.
+- Symmetry ensures balanced propagation delay and consistent output levels.
+
 | Input A | Input B | Output |
 | ------- | ------- | ------ |
 | 0       | 0       | 0      |
@@ -24,6 +32,14 @@ The schematic and truth table for 2 inputs A and B for XNOR gate:
 **SCHEMATIC OF XNOR GATE**
 
 <img  src="images/xnor.jpeg">
+
+**Circuit Explanation:**
+
+- Uses a total of 8 transistors: 4 NMOS and 4 PMOS.
+- Symmetric arrangement, similar to XOR gate, with two main branches for each input.
+- Transmission gates are controlled so the output is high only when both inputs are the same.
+- Symmetry ensures balanced output transitions and reliable gate operation for all input combinations.
+- Complementary pass transistors (NMOS and PMOS) help maintain full logic levels at the output.
 
 | Input A | Input B | Output |
 | ------- | ------- | ------ |

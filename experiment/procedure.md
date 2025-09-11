@@ -6,21 +6,52 @@
 - Drag and drop the code blocks to arrange them in the order mentioned above.
 - Now enter the name of the MOSFET model file to be included ("PTM_45nm.txt").
 - To define the voltage source, enter a name for it and then select vdd as the positive terminal and 0 or gnd as the negative terminal.
-- Now, define the subcircuit by giving it a name and also giving names to the input and output arguments of the subckt.
-- Inside this subcircuit, we need to call invverter and pass transistor sub circuits which are built using pmos and nmos and these connections are given as follows:
-  _INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH_
-  An instance name to both nmos and pmos mosfets are given, then we need to connect the body of pmos to vdd, and of nmos to gnd or 0 respectively and rest of theconnections accordingly as shown in previous experiments.
-- Then inside the main subckt block, instantiate the inverter and pass transistor subcircuits according to the following connections in the figures.
+  Now, define the subcircuit by giving it a name and also giving names to the input and output arguments of the subcircuit.
+  Inside this subcircuit, we need to call inverter and pass transistor subcircuits which are built using PMOS and NMOS, and these connections are given as follows:
 
-  **Connections for XOR**
-  <img src="images/xor.png">
+The connections for each MOSFET should follow this template:
 
-  **Connections for XNOR**
-  <img src="images/xnor.png">
+<pre>
+INSTANCE_NAME DRAIN GATE SOURCE BODY
+NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH
+</pre>
 
-- Now end the subckt block by '.ends'.
-- Now call this gate subcircuit by giving an instance name, then by giving 'a', 'b' as inputs and 'out' as output and then complete the call by typing in the respective gate subckt name.
-- **Note** : _While giving names to the subcircuit, nodes, variables and instance names, make sure that they begin with either alphabets, '%', '$' or '_' charachter only and they can only contain alphanumeric characters,'%', '$' and '\_' charachters only. The spice code is case insensitive so make sure to not give same names to any 2 variables in the same circuit or subcircuit irrespective of the case.\_
+**Wiring Steps:**
+
+- Assign a unique instance name to each NMOS and PMOS transistor.
+- Connect the body of PMOS to VDD, and the body of NMOS to GND or 0.
+- Make the remaining connections as shown in previous experiments and circuit diagrams.
+
+Then inside the main subcircuit block, instantiate the inverter and pass transistor subcircuits according to the following connections in the figures.
+Now end the subcircuit block by `.ends`.
+Now call this gate subcircuit by giving an instance name, then by giving 'a', 'b' as inputs and 'out' as output and then complete the call by typing in the respective gate subcircuit name.
+
+**Note:**
+While giving names to the subcircuit, nodes, variables and instance names, make sure that they begin with either alphabets, '%', '$' or '_' character only and they can only contain alphanumeric characters, '%', '$' and '\_' characters only. The SPICE code is case insensitive so make sure to not give the same names to any two variables in the same circuit or subcircuit irrespective of the case.
+
+**Connections for XOR**
+<img src="images/xor.png">
+
+**Connections for XNOR**
+<img src="images/xnor.png">
+
+**Step-by-Step Wiring Table: XOR Gate**
+
+| Step | Action                  | Description                                                |
+| ---- | ----------------------- | ---------------------------------------------------------- |
+| 1    | Build Inverter          | Construct inverter subcircuit for input signals            |
+| 2    | Add Pass Transistors    | Place NMOS and PMOS pass transistors for each input branch |
+| 3    | Connect Control Signals | Use complementary inputs to control transmission gates     |
+| 4    | Combine Outputs         | Merge outputs from transmission gates to form XOR output   |
+
+**Step-by-Step Wiring Table: XNOR Gate**
+
+| Step | Action                  | Description                                                |
+| ---- | ----------------------- | ---------------------------------------------------------- |
+| 1    | Build Inverter          | Construct inverter subcircuit for input signals            |
+| 2    | Add Pass Transistors    | Place NMOS and PMOS pass transistors for each input branch |
+| 3    | Connect Control Signals | Use complementary inputs to control transmission gates     |
+| 4    | Combine Outputs         | Merge outputs from transmission gates to form XNOR output  |
 
 #### Observations -
 
