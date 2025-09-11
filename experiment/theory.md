@@ -1,4 +1,4 @@
-## 1. XOR and XNOR Gate Fundamentals
+### 1. XOR and XNOR Gate Fundamentals
 
 **XOR** (exclusive OR)
 
@@ -32,7 +32,7 @@ The schematic and truth table for 2 inputs A and B for XNOR gate:
 | 1       | 0       | 0      |
 | 1       | 1       | 1      |
 
-## 2. Introduction to SPICE
+### 2. Introduction to SPICE
 
 In the experiments we have done till now we have designed gates by arranging transistors in various fashions. The simulation of these designs gave graphs of output voltages and we analyzed how these graphs change with varying different parameters of the transistor. Now when you place a transistor on screen there is a back end code which tells a simulator what are the points to which the transistor's substrate, gate, drain, source are connected. The language in which this information is conveyed is SPICE.
 
@@ -55,7 +55,7 @@ Several types of circuit analyses can be done using SPICE program. Here are the 
 
 All analyses can be done at different temperatures. The default temperature is 300K.
 
-## 3. SPICE Syntax and Commands
+### 3. SPICE Syntax and Commands
 
 **SPICE FILE STRUCTURE**
 
@@ -219,9 +219,9 @@ First line of SPICE code is always a comment. So this line is always ignored by 
 11. **.end**
     - Marks the end of the spice code.
 
-## 4. TRANSISTOR LEVEL XOR, XNOR GATES
+### 4. TRANSISTOR LEVEL XOR, XNOR GATES
 
-### PASS TRANSISTORS:
+#### PASS TRANSISTORS:
 
 Transmission gate is the parallel combination of NMOS and PMOS. When control signal (signal A) is high then transmission gate passes signal from input to output.
 
@@ -247,7 +247,7 @@ Transmission gate is the parallel combination of NMOS and PMOS. When control sig
 | 0   | 1       | X   |
 | 1   | 1       | X   |
 
-### XOR GATE USING PASS TRANSISTORS
+#### XOR GATE USING PASS TRANSISTORS
 
 An XOR gate using pass transistors typically employs transmission gates or pass gates to achieve the desired logic functionality. A transmission gate consists of two complementary pass transistors (NMOS and PMOS) connected in parallel between the input and output nodes. The operation of the XOR gate can be understood by analyzing the behavior of these pass transistors.
 
@@ -277,7 +277,7 @@ The output is formed by combining the signals from both inputs. This combination
 The final output represents the XOR of the input signals – it is high when the inputs are different and low when the inputs are the same.
 In summary, the XOR gate using pass transistors relies on the controlled conduction of NMOS and PMOS transistors to selectively allow input signals to pass through to the output. The control signals determine which input contributes to the output at any given time, producing the desired XOR logic behavior.
 
-### XNOR GATE USING PASS TRANSISTORS
+#### XNOR GATE USING PASS TRANSISTORS
 
 An XNOR gate using pass transistors typically employs transmission gates or pass gates to achieve the desired logic functionality. A transmission gate consists of two complementary pass transistors (NMOS and PMOS) connected in parallel between the input and output nodes. The operation of the XOR gate can be understood by analyzing the behavior of these pass transistors.
 
