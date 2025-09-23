@@ -61,12 +61,12 @@
         "d": "Same as one of the inputs"
       },
       "explanations": {
+        "a": "Incorrect. For an XNOR gate, the output is HIGH when both inputs are the same, including when both are LOW.",
         "b": "Correct! When both inputs are the same, the output is High.",
-        "a": "Incorrect. Check the truth table for an XNOR gate.",
-        "c": "Incorrect. The output of an XNOR gate can be determined.",
-        "d": "Incorrect. Check the truth table for an XNOR gate."
+        "c": "Incorrect. The output of an XNOR gate is always defined by its truth table.",
+        "d": "Incorrect. The output of an XNOR gate depends on both inputs, not just one."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
@@ -112,12 +112,12 @@
         "d": "0 0 | 1\n0 1 | 1\n1 0 | 1\n1 1 | 0"
       },
       "explanations": {
-        "a": "Incorrect. Check the correct truth table for an XOR gate.",
-        "b": "Correct! Represents the correct truth table for an XOR gate.",
-        "c": "Incorrect. Check the correct truth table for an XOR gate.",
-        "d": "Incorrect. Check the correct truth table for an XOR gate."
+        "a": "Correct! This is the standard truth table for an XOR gate: output is HIGH only when the inputs are different.",
+        "b": "Incorrect. This table shows output HIGH when both inputs are LOW or both are HIGH, which is the XNOR gate, not XOR.",
+        "c": "Incorrect. This table shows output HIGH only when both inputs are HIGH, which is the AND gate, not XOR.",
+        "d": "Incorrect. This table shows output HIGH for all cases except when both inputs are HIGH, which does not match XOR logic."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "advanced"
     },
     {
@@ -141,17 +141,17 @@
       "question": "In a pass transistor XOR gate, how many transistors are required?",
       "answers": {
         "a": "2",
-        "b": "3",
-        "c": "4",
-        "d": "6"
+        "b": "4",
+        "c": "6",
+        "d": "8"
       },
       "explanations": {
-        "a": "Incorrect. More transistors are required for a pass transistor XOR gate.",
-        "b": "Correct! A pass transistor XOR gate requires 3 transistors.",
-        "c": "Incorrect. Check the correct number of transistors for a pass transistor XOR gate.",
-        "d": "Incorrect. Too many transistors for a pass transistor XOR gate."
+        "a": "Incorrect. Two transistors cannot implement the full XOR logic with required inverters; more are needed for correct operation.",
+        "b": "Incorrect. Four transistors can form the basic pass transistor structure, but additional inverters are needed for full CMOS XOR implementation.",
+        "c": "Incorrect. Six transistors are still not enough for a complete XOR gate with both pass transistors and inverters.",
+        "d": "Correct! A pass transistor XOR gate typically requires 8 transistors: 4 for pass transistors and 4 for two inverter circuits to ensure proper logic levels."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "advanced"
     },
     {

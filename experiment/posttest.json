@@ -112,12 +112,12 @@
         "d": "`.tran 100n`"
       },
       "explanations": {
-        "a": "Incorrect. This specifies the total simulation time, not the time step.",
-        "b": "Correct! This syntax specifies the simulation time step.",
-        "c": "Incorrect. This specifies the total simulation time, not the time step.",
-        "d": "Incorrect. This specifies the total simulation time, not the time step."
+        "a": "Correct! This syntax sets the time step for the transient analysis. If only one value is given, it is used as both the time step and the total simulation time.",
+        "b": "Also correct. This syntax explicitly sets the time step and total simulation time. Both forms are accepted in NGSPICE.",
+        "c": "Incorrect. This sets the time step and total simulation time, but the values may not be appropriate for your simulation.",
+        "d": "Incorrect. This sets the time step and total simulation time, but may not be suitable for your analysis."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "advanced"
     },
     {
