@@ -1,0 +1,328 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How can you specify the rise time of a pulse source in NGSPICE?",
+      "answers": {
+        "a": "`.PULSE 0 5 0 1u 1u 1u 10u`",
+        "b": "`.PULSE(0 5 0 1u 1u 1u 10u)`",
+        "c": "`.PULSE (V1=0 V2=5 TD=1u TR=1u TF=1u PW=10u)`",
+        "d": "`.PULSE V1=0 V2=5 TD=1u TR=1u TF=1u PW=10u`"
+      },
+      "explanations": {
+        "a": "Correct! This syntax specifies the rise time in NGSPICE for a pulse source.",
+        "b": "Incorrect. Incorrect syntax for specifying rise time in a pulse source.",
+        "c": "Incorrect. Incorrect syntax for specifying rise time in a pulse source.",
+        "d": "Incorrect. Incorrect syntax for specifying rise time in a pulse source."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which NGSPICE command is used to perform AC analysis?",
+      "answers": {
+        "a": "`.ac`",
+        "b": "`.tran`",
+        "c": "`.dc`",
+        "d": "`.ac sweep`"
+      },
+      "explanations": {
+        "a": "Correct! The `.ac` command is used for AC analysis in NGSPICE.",
+        "b": "Incorrect. The `.tran` command is used for transient analysis.",
+        "c": "Incorrect. The `.dc` command is used for DC analysis.",
+        "d": "Incorrect. Incorrect syntax for AC analysis."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.dc` command in NGSPICE?",
+      "answers": {
+        "a": "To perform DC analysis",
+        "b": "To define a subcircuit",
+        "c": "To set simulation temperature",
+        "d": "To specify the rise time of a pulse source"
+      },
+      "explanations": {
+        "a": "Correct! The `.dc` command is used for DC analysis in NGSPICE.",
+        "b": "Incorrect. The `.dc` command is not used for defining subcircuits.",
+        "c": "Incorrect. Simulation temperature is set using other commands.",
+        "d": "Incorrect. Pulse source characteristics are set using other commands."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.option post` command in NGSPICE?",
+      "answers": {
+        "a": "To enable post-processing",
+        "b": "To set simulation options",
+        "c": "To include a lib file",
+        "d": "To specify the simulation temperature"
+      },
+      "explanations": {
+        "a": "Correct! The `.option post` command is used to enable post-processing in NGSPICE.",
+        "b": "Incorrect. The `.options` command is used for setting simulation options.",
+        "c": "Incorrect. The `.lib` command is used to include a library file.",
+        "d": "Incorrect. The `.temp` command is used to specify the simulation temperature."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How can you specify the amplitude of an AC source in NGSPICE?",
+      "answers": {
+        "a": "`.AC AMPLITUDE=1V`",
+        "b": "`.AC(AMPLITUDE=1V)`",
+        "c": "`.AC 1V`",
+        "d": "`.AC VAMPL=1V`"
+      },
+      "explanations": {
+        "a": "Correct! This syntax specifies the amplitude of an AC source in NGSPICE.",
+        "b": "Incorrect. Incorrect syntax for specifying AC amplitude.",
+        "c": "Incorrect. Incorrect syntax for specifying AC amplitude.",
+        "d": "Incorrect. Incorrect syntax for specifying AC amplitude."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the `.measure` command in NGSPICE?",
+      "answers": {
+        "a": "To perform measurements during simulation",
+        "b": "To define a subcircuit",
+        "c": "To set simulation options",
+        "d": "To enable post-processing"
+      },
+      "explanations": {
+        "a": "Correct! The `.measure` command is used to perform measurements during simulation in NGSPICE.",
+        "b": "Incorrect. The `.measure` command is not used for defining subcircuits.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Incorrect. The `.option post` command is used to enable post-processing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "How can you specify the simulation time step in NGSPICE for transient analysis?",
+      "answers": {
+        "a": "`.tran 1u`",
+        "b": "`.tran 1u/10`",
+        "c": "`.tran 10u/100`",
+        "d": "`.tran 100n`"
+      },
+      "explanations": {
+        "a": "Correct! This syntax sets the time step for the transient analysis. If only one value is given, it is used as both the time step and the total simulation time.",
+        "b": "Also correct. This syntax explicitly sets the time step and total simulation time. Both forms are accepted in NGSPICE.",
+        "c": "Incorrect. This sets the time step and total simulation time, but the values may not be appropriate for your simulation.",
+        "d": "Incorrect. This sets the time step and total simulation time, but may not be suitable for your analysis."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.nodeset` command in NGSPICE?",
+      "answers": {
+        "a": "To set initial conditions for nodes",
+        "b": "To define a subcircuit",
+        "c": "To specify the simulation temperature",
+        "d": "To enable post-processing"
+      },
+      "explanations": {
+        "a": "Correct! The `.nodeset` command is used to set initial conditions for nodes in NGSPICE.",
+        "b": "Incorrect. The `.nodeset` command is not used for defining subcircuits.",
+        "c": "Incorrect. The `.temp` command is used to specify the simulation temperature.",
+        "d": "Incorrect. The `.option post` command is used to enable post-processing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the .lib command in NGSPICE?",
+      "answers": {
+        "a": "To include a library file",
+        "b": "To define a subcircuit",
+        "c": "To specify the simulation temperature",
+        "d": "To set simulation options"
+      },
+      "explanations": {
+        "a": "Correct! The .lib command is used to include a library file in NGSPICE.",
+        "b": "Incorrect. The .lib command is not used for defining subcircuits.",
+        "c": "Incorrect. The .temp command is used for specifying the simulation temperature.",
+        "d": "Incorrect. The .options command is used for setting simulation options."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `.param` command in NGSPICE?",
+      "answers": {
+        "a": "To define a subcircuit",
+        "b": "To specify the simulation temperature",
+        "c": "To set simulation options",
+        "d": "To assign parameter values"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.param` command is not used for defining subcircuits.",
+        "b": "Incorrect. The `.temp` command is used for specifying the simulation temperature.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Correct! The `.param` command is used to assign parameter values in NGSPICE."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In NGSPICE, what is the purpose of the `.op` analysis?",
+      "answers": {
+        "a": "DC operating point analysis",
+        "b": "Transient analysis",
+        "c": "AC analysis",
+        "d": "Noise analysis"
+      },
+      "explanations": {
+        "a": "Correct! The `.op` analysis in NGSPICE is used for DC operating point analysis.",
+        "b": "Incorrect. Transient analysis is performed using a different command.",
+        "c": "Incorrect. AC analysis is performed using a different command.",
+        "d": "Incorrect. Noise analysis is performed using a different command."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How can you set the value of a parameter in NGSPICE for a pass transistor model?",
+      "answers": {
+        "a": "`.param WIDTH=1u`",
+        "b": "`.param LENGTH=0.5u`",
+        "c": "`.param VTH=0.7`",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Correct! This sets the value of the WIDTH parameter for the pass transistor.",
+        "b": "Correct! This sets the value of the LENGTH parameter for the pass transistor.",
+        "c": "Correct! This sets the value of the VTH parameter for the pass transistor.",
+        "d": "Correct! All of the above are valid ways to set parameter values in NGSPICE."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.control` block in NGSPICE?",
+      "answers": {
+        "a": "To define a subcircuit",
+        "b": "To specify the simulation temperature",
+        "c": "To set simulation options",
+        "d": "To group multiple commands"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.control` block is not used for defining subcircuits.",
+        "b": "Incorrect. The `.temp` command is used for specifying the simulation temperature.",
+        "c": "Incorrect. The `.options` command is used for setting simulation options.",
+        "d": "Correct! The `.control` block in NGSPICE is used to group multiple commands."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the purpose of the `.endc` command in an NGSPICE `.control` block?",
+      "answers": {
+        "a": "To end the simulation",
+        "b": "To end the `.control` block",
+        "c": "To define a subcircuit",
+        "d": "To set simulation options"
+      },
+      "explanations": {
+        "a": "Incorrect. The `.end` command is used to end the simulation.",
+        "b": "Correct! The `.endc` command is used to end the `.control` block in NGSPICE.",
+        "c": "Incorrect. Subcircuits are not defined within the `.control` block.",
+        "d": "Incorrect. The `.options` command is used for setting simulation options."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which configuration of transistors would you use to design a 2-input XOR gate at the transistor level in SPICE?",
+      "answers": {
+        "a": "Series NMOS, parallel PMOS",
+        "b": "Parallel NMOS, series PMOS",
+        "c": "Combination of series and parallel NMOS and PMOS",
+        "d": "Only NMOS transistors"
+      },
+      "explanations": {
+        "a": "Incorrect. This configuration is typical for NAND gates, not XOR gates.",
+        "b": "Incorrect. This configuration is typical for NOR gates, not XOR gates.",
+        "c": "Correct. XOR gates require a combination of series and parallel NMOS and PMOS transistors to implement the exclusive OR logic.",
+        "d": "Incorrect. Both NMOS and PMOS transistors are needed for CMOS XOR gates."
+      },
+      "correctAnswer": "c",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "How would you modify a CMOS XOR gate to create a XNOR gate in SPICE?",
+      "answers": {
+        "a": "Add an inverter at the output",
+        "b": "Swap the input terminals",
+        "c": "Remove one input",
+        "d": "Increase the supply voltage"
+      },
+      "explanations": {
+        "a": "Correct. Adding an inverter at the output of an XOR gate creates a XNOR gate, which outputs high when inputs are equal.",
+        "b": "Incorrect. Swapping input terminals does not change XOR to XNOR logic.",
+        "c": "Incorrect. Removing one input does not create a XNOR gate.",
+        "d": "Incorrect. Increasing supply voltage does not change the logic function."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "If a simulated XOR gate output is always low, which design issue is most likely?",
+      "answers": {
+        "a": "PMOS transistors are always off",
+        "b": "NMOS transistors are always on",
+        "c": "Incorrect wiring of inputs",
+        "d": "Missing ground connection"
+      },
+      "explanations": {
+        "a": "Incorrect. If PMOS transistors are always off, output may be low, but check input wiring first.",
+        "b": "Incorrect. If NMOS transistors are always on, output may be low, but check input wiring first.",
+        "c": "Correct. Incorrect wiring of inputs can cause the XOR gate to never detect differing inputs, resulting in a constant low output.",
+        "d": "Incorrect. Missing ground connection may cause undefined behavior, not specifically a constant low output."
+      },
+      "correctAnswer": "c",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "Which digital application commonly uses XOR gates?",
+      "answers": {
+        "a": "Adder circuits",
+        "b": "Memory cells",
+        "c": "Oscillators",
+        "d": "Voltage regulators"
+      },
+      "explanations": {
+        "a": "Correct. XOR gates are commonly used in adder circuits, such as half and full adders, for bitwise addition.",
+        "b": "Incorrect. Memory cells do not typically use XOR gates for storage.",
+        "c": "Incorrect. Oscillators do not use XOR gates as their main logic element.",
+        "d": "Incorrect. Voltage regulators do not use XOR gates."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "What is the role of XNOR gates in digital systems?",
+      "answers": {
+        "a": "Parity checking",
+        "b": "Signal amplification",
+        "c": "Voltage regulation",
+        "d": "Frequency division"
+      },
+      "explanations": {
+        "a": "Correct. XNOR gates are used in parity checking circuits to determine if the number of high inputs is even.",
+        "b": "Incorrect. Signal amplification is not the role of XNOR gates.",
+        "c": "Incorrect. Voltage regulation is not the role of XNOR gates.",
+        "d": "Incorrect. Frequency division is not the role of XNOR gates."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
+    }
+  ]
+}
